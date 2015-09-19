@@ -70,18 +70,43 @@
   * O(n) traversal
   * O(1) insertion at beginning or end
   * O(n) insertion elsewhere
-  * 
 * Doubly linked list
+  * Nodes point backward and forward
 * Array list
+  * See dynamic array
 * Self-organizing list
+  * Automatically moves elements that will be accessed frequently toward the head
 * Skip list
+  * Multiple layers of linked lists
+  * Faster traversal at the cost of more space
+  * Can be used to implement binary search on a linked list
+  * Usually determine which nodes are in higher layers probabilistically
 * Unrolled linked list
+  * Multple elements in each node, e.g. via array
+  * Faster performance due to caching
 * VList
+  * O(1) access on average, O(log n) worst case
+  * O(1) append to front
+  * O(1) remove first element
+  * O(log n) compute length
+  * Immutable
+  * Linked list of arrays with geometrically decreasing sizes
 * Xor linked list
-* Zipper
+  * Doubly linked list with saved space
+  * XOR next and prev together
+  * When traversing, XOR nextprev with the last address
 * Doubly connected edge list
+  * Represents embedding of planar graph
+  * Used in computational geometry
+  * Used to represent Voronoi diagrams
 * Difference list
+  * Contains two lists and represents the difference between them
 * Free list
+  * Linked list of unallocated blocks
+  * O(1) to allocate
+  * O(1) to free
+  * Poor locality of reference
+  * Speed is lost when blocks differ in size
 
 ## Trees
 
