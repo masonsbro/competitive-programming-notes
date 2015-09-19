@@ -113,29 +113,77 @@
 ### Binary trees
 
 * AA tree
+  * Variation on red-black tree
 * AVL tree
+  * First self-balancing BST
 * Binary search tree
+  * Binary tree
+  * Every node in left subtree is less than parent
+  * Every node in right subtree is greater than parent
 * Binary tree
+  * Each node has at most 2 children
+  * Can be stored in array
 * Cartesian tree
+  * Binary tree derived from sequence of numbers
+  * Heap-ordered
+  * In-order traversal yields original sequence
+  * O(n) construction
 * Order statistic tree
+  * Self-balancing B-tree
+  * O(log n) selection and rank
 * Pagoda
+  * Priority queue with variant of binary tree
+  * Root points to left and right child
+  * Other nodes point to parent and leftmost/rightmost descendant leaf
+  * Merge/meld operation
 * Randomized binary search tree
+  * Cartesian tree where each key gets a random priority
+  * Heap-ordered by priority, but also satisfies BST property
+  * O(log n) average height
 * Red-black tree
+  * Self-balancing BST
 * Rope
+  * Leaves are short strings
+  * Represents very big string
+  * O(log n) selection
+  * O(log n) concatenation
+  * O(log n) split
+  * O(log n) insert
+  * O(log n) delete
+  * O(j + log n) report (read substring)
+  * Many tradeoffs with regular strings
 * Scapegoat tree
+  * Self-balancing BST
 * Self-balancing binary search tree
+  * BST that balances itself
 * Splay tree
+  * Self-adjusting BST
+  * Fast access to recently accessed elements
 * T-tree
+  * BST that stores pointers to other data
 * Tango tree
+  * Really freaking complicated
+  * Multiple trees to give faster searches
+  * Worth reading more about later
 * Threaded binary tree
+  * Each leaf also points to its in-order predecessor or successor (or both)
+  * Allows fast traversal
 * Top tree
+  * Represents subdivision of another tree into clusters
+  * Allows divide-and-conquer algorithms
+  * Worth reading more about later
 * Treap
+  * See randomized BST
 * Weight-balanced tree
-* Binary data structure
+  * Self-balancing BST
+  * Each node has a "size" that is the number of nodes below it
+  * Useful for order statistic
+  * Used in MIT Scheme, SLIB, and implementations of Haskell
 
 ### B-trees
 
 * B-tree
+  * Binary search tree but not binary
 * B+ tree
 * B*-tree
 * B sharp tree
