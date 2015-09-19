@@ -185,15 +185,38 @@
 * B-tree
   * Binary search tree but not binary
 * B+ tree
+  * B-tree, where each node has only a key and no value
+  * Very large branching factor (but bounded)
+  * Additional level at bottom with linked leaves
+  * Used in filesystems
 * B*-tree
-* B sharp tree
+  * B-tree, but different
 * Dancing tree
+  * Self-balancing binary search tree
+  * Balances only when writing to disk
 * 2-3 tree
+  * Two types of nodes
+  * 2-nodes have 1 data element and 2 children
+  * 3-nodes have 2 data elements and 3 children
+  * Search tree
+  * Fast searching and easy insertion
+  * Isometry of AA tree
 * 2-3-4 tree
+  * B-tree of order 4
+  * Similar idea to 2-3 tree
+  * Isometry of red-black tree
 * Queap
+  * Doubly linked list and 2-3-4 tree, modified to keep track of min priority
+  * All newly inserted items are stored in linked list
+  * After a deletion, all items are moved to 2-3-4 tree
+  * 2-3-4 tree stores elements in insertion order
 * Fusion tree
+  * O(log<sub>w</sub> n) search on w-bit integers
+  * Faster than traditional BST
+  * B-tree with branching factor w<sup>1/5</sup>
 * Bx-tree
-* AList
+  * B+ tree-based index structure for moving objects
+  * Fast queries and updates
 
 ### Heaps
 
