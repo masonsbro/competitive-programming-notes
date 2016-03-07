@@ -1,75 +1,39 @@
 # Competitive Programming Tutorial
 
-## Introduction
-
-## Basics
-
-## Implementation
-
-## Brute Force
-
-## Binary Search
-
-## Math
-
-### Binary exponentiation
-
-### Euclidean algorithm
-
-### Extended euclidean algorithm
-
-## Greedy
-
-## Graphs
-
-### Review
-
-### BFS and DFS
-
-### Dijkstra's algorithm
-
-### Bellman-Ford algorithm
-
-### Floyd-Warshall algorithm
-
-### Practice problems
-
-### Graph coloring
-
-## Dynamic programming
-
-### Introduction
-
-### Fibonacci
-
-### Coin change
-
-### Longest increasing subarray
-
-### Longest increasing subsequence
-
-### Longest common subsequence
-
-### Binary knapsack
-
-### Unbounded knapsack
-
-### Practice problems
-
-## Segment trees
-
-### Range sum query
-
-### Range minimum query
-
-### Longest increasing subsequence
-
-## Miscellaneous algorithms
-
-### Sliding window range minimum query
-
-### Largest area under histogram
-
-## Maximum flow
-
-## Fast fourier transform
+1. Introduction
+2. Implementation
+3. Brute force
+4. Binary search
+5. Math
+    1. Binary exponentiation
+    2. Euclidean algorithm
+    3. Extended Euclidean algorithm
+6. Greedy
+7. Graphs
+    1. Review
+    2. BFS and DFS
+    3. Dijkstra's algorithm
+    4. Bellman-Ford algorithm
+    5. Floyd-Warshall algorithm
+    6. Graph coloring
+    7. Practice problems
+8. Dynamic programming
+    1. Introduction
+    2. Fibonacci
+    3. Coin change
+    4. Longest increasing subarray
+    5. Longest increasing subsequence
+    6. Longest common subsequence
+    7. Binary knapsack
+    8. Unbounded knapsack
+    9. Largest square
+    10. Practice problems
+9. Segment trees
+    1. Range sum query
+    2. Range minimum query
+    3. Longest increasing subsequence
+10. Miscellaneous algorithms
+    1. Sliding window range minimum query
+    2. Largest rectangle under histogram
+11. Maximum flow
+12. Fast fourier transform
