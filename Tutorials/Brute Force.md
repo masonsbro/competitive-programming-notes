@@ -4,18 +4,18 @@
 
 #### Description
 
-Emma is a graduate student at the University of Texas at Austin, and she has been invited to give talks at N conferences around the world. All of the conferences are taking place during the same week, and Emma gets to choose when she gives her talk at each conference. Emma loves traveling, but she hates airplanes--unfortunately, the N conferences are spread among M countries, and in order to travel between countries she must fly in a plane. She wants to schedule her talks in an order that minimizes the amount of time she spends in an airplane. Emma can hang glide between conferences in the same country, and she doesn't mind hang gliding; furthermore, she will hang glide to the first conference she attends and back to UT after the last conference.
+Emma is a graduate student at the University of Texas at Austin, and she has been invited to give talks at N conferences around the world. All of the conferences are taking place at the same time (and are not ending until Emma finishes her talks), and Emma gets to choose when she gives her talk at each conference. Emma loves traveling, but she hates airplanes--unfortunately, the N conferences are spread among M countries, and in order to travel between countries she must fly in a plane. She wants to schedule her talks in an order that minimizes the amount of time she spends in an airplane. Emma can hang glide between conferences in the same country, and she doesn't mind hang gliding; furthermore, she will hang glide to the first conference she attends and back to UT after the last conference.
 
-As Emma is busy putting together her talks, she wants you to find an optimal order for the N conferences.
+Because Emma is busy putting together her talks, she wants you to find an optimal order for the N conferences.
 
 #### Constraints
 
-1 <= T <= 5
-1 <= N <= 100,000
-1 <= M <= 8
-1 <= A_i <= M
-1 <= X_j <= M
-1 <= Y_j <= M
+1 <= T <= 5  
+1 <= N <= 100,000  
+1 <= M <= 8  
+1 <= A_i <= M  
+1 <= X_j <= M  
+1 <= Y_j <= M  
 1 <= B_j <= 1,000
 
 #### Input
@@ -30,23 +30,23 @@ Output N lines. The ith line contains the ith conference Emma should give her ta
 
 #### Sample input
 
-1
-5 3
-1
-2
-1
-3
-3
-1 2 10
-2 3 50
+1  
+5 3  
+1  
+2  
+1  
+3  
+3  
+1 2 10  
+2 3 50  
 1 3 100
 
 #### Sample output
 
-1
-3
-2
-4
+1  
+3  
+2  
+4  
 5
 
 ### Discussion
