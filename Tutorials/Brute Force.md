@@ -31,25 +31,25 @@ Output N lines. The ith line contains the ith conference Emma should give her ta
 #### Sample input
 
 ```
-1  
-5 3  
-1  
-2  
-1  
-3  
-3  
-1 2 10  
-2 3 50  
+1
+5 3
+1
+2
+1
+3
+3
+1 2 10
+2 3 50
 1 3 100
 ```
 
 #### Sample output
 
 ```
-1  
-3  
-2  
-4  
+1
+3
+2
+4
 5
 ```
 
