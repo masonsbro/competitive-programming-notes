@@ -6,6 +6,8 @@ These tutorials provide a high-level overview of the problem-solving techniques 
 
 If you want to get up to speed on these topics, I recommend Stanford's algorithms courses on Coursera ([part 1](https://www.coursera.org/course/algo) and [part 2](https://www.coursera.org/course/algo2)). They strike a good balance between clarity/accessibility and conciseness.
 
+I will also assume some basic knowledge of discrete math.
+
 Of course, you should also know at least one programming language and its standard library. Code snippets in these tutorials will use Python, but C++ is another common choice. I personally tend to use Python for some problems and C++ for others; I know some people who use Java for everything. It's a matter of personal preference. Regardless, you should have some level basic literacy in Python if you want to understand the code snippets in these tutorials.
 
 ### Reading problem statements

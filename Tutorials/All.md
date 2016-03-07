@@ -32,8 +32,9 @@
     1. Range sum query
     2. Range minimum query
     3. Longest increasing subsequence
-10. Miscellaneous algorithms
+10. Miscellaneous
     1. Sliding window range minimum query
     2. Largest rectangle under histogram
+    3. Coordinate compression
 11. Maximum flow
 12. Fast fourier transform
