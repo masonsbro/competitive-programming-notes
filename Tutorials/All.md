@@ -10,6 +10,7 @@
     2. Euclidean algorithm
     3. Extended Euclidean algorithm
     4. Chinese remainder theorem
+    5. Matrix exponentiation
 7. Greedy
 8. Dynamic programming
     1. Introduction
