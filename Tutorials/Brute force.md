@@ -137,4 +137,4 @@ Some readers will recognize this as the traveling salesman problem. The travelin
 
 ### Further reading
 
-
+The best way to get better at brute force problems is to practice. I recommend participating in all the Codeforces contests you can. The first two problems in these contests are often brute force or implementation problems. Most brute force problems are kind of ad-hoc--there's not a single approach that you can apply to all of them. I won't link any other resources to study, because there isn't really anything to study.
