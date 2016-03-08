@@ -8,6 +8,7 @@
     1. Binary exponentiation
     2. Euclidean algorithm
     3. Extended Euclidean algorithm
+    4. Chinese remainder theorem
 6. Greedy
 7. Graphs
     1. Review
@@ -16,7 +17,10 @@
     4. Bellman-Ford algorithm
     5. Floyd-Warshall algorithm
     6. Graph coloring
-    7. Practice problems
+    7. Minimum spanning tree
+    8. Strongly connected components
+    9. Topological sort
+    10. Practice problems
 8. Dynamic programming
     1. Introduction
     2. Fibonacci
@@ -36,5 +40,6 @@
     1. Sliding window range minimum query
     2. Largest rectangle under histogram
     3. Coordinate compression
+    4. Sweep line
 11. Maximum flow
-12. Fast fourier transform
+12. Fast Fourier transform

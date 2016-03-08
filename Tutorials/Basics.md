@@ -30,7 +30,7 @@ Once you have some experience solving certain types of problems, you'll be able 
 
 After reading a problem statement, be sure to check the constraints so you know how fast your solution needs to be. If the input size is at most 10, a brute-force algorithm will work; if N can be 1,000,000, something more clever is necessary.
 
-A good rule of thumb is to assume that a computer can execute 10^8 operations per second. Substitute the maximum input size of the problem into your big-O time bound, divide by the time limit in seconds, and if the result is less than 10^8, your algorithm will probably be fast enough. Now, we aren't taking into account constant factors, and sometimes those make a difference: for example, both quicksort and fast fourier transform run in O(N log N) time, but in practice you're much less likely to run into time trouble with the former than with the latter on problems with similar maximum input sizes.
+A good rule of thumb is to assume that a computer can execute 10^8 operations per second. Substitute the maximum input size of the problem into your big-O time bound, divide by the time limit in seconds, and if the result is less than 10^8, your algorithm will probably be fast enough. Now, we aren't taking into account constant factors, and sometimes those make a difference: for example, both quicksort and fast Fourier transform run in O(N log N) time, but in practice you're much less likely to run into time trouble with the former than with the latter on problems with similar maximum input sizes.
 
 ### Input and output
 
