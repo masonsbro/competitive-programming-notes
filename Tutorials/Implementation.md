@@ -4,7 +4,7 @@
 
 #### Description
 
-Liam was hired by Moogle to help build the Gaps app. Moogle Gaps is an application for finding the shortest path between two locations, using different modes of transportation. Liam has been assigned the part of the application for hot air balloons. Because hot air balloons are not constrained by roads, the shortest distance between two points via hot air balloon is the Euclidian distance between those two points (as X and Y coordinates).
+Liam was hired by Moogle to help build the Gaps app. Moogle Gaps is an application for finding the length of the shortest path between two locations, using different modes of transportation. Liam has been assigned the part of the application for hot air balloons. Because hot air balloons are not constrained by roads, the shortest distance between two points via hot air balloon is the Euclidian distance between those two points (as X and Y coordinates).
 
 Liam has spent his days watching TouYube videos, and the launch date for Gaps is fast approaching. He needs your help to implement the hot air balloon shortest path functionality. The app takes as input a list of N locations and Q queries. A location is given as a name (1-20 uppercase letters) and a pair of coordinates. A query asks for the shortest hot air balloon distance between two named locations.
 
