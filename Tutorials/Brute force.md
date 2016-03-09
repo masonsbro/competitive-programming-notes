@@ -87,6 +87,33 @@ def gen_permutations(current_list, current_position):
             swap(current_list, index, current_position)
 ```
 
+Here's the output of that function on the list `[1, 2, 3]`:
+
+```
+[1, 2, 3] 0
+ [1, 2, 3] 1
+  [1, 2, 3] 2
+   [1, 2, 3] 3
+   finished permutation: [1, 2, 3]
+  [1, 3, 2] 2
+   [1, 3, 2] 3
+   finished permutation: [1, 3, 2]
+ [2, 1, 3] 1
+  [2, 1, 3] 2
+   [2, 1, 3] 3
+   finished permutation: [2, 1, 3]
+  [2, 3, 1] 2
+   [2, 3, 1] 3
+   finished permutation: [2, 3, 1]
+ [3, 2, 1] 1
+  [3, 2, 1] 2
+   [3, 2, 1] 3
+   finished permutation: [3, 2, 1]
+  [3, 1, 2] 2
+   [3, 1, 2] 3
+   finished permutation: [3, 1, 2]
+```
+
 When we finish a permutation, though, we want to see if it's better than the best one seen so far (that is, whether it has a smaller total airplane time than the current best, or, if it has the same airplane time as the current best, whether it is lexicographically smaller). To do this, we'll keep track of the current permutation's airplane time, as well as the best permutation and its airplane time. The best permutation and its airplane time should be global variables, so that we can update them at one leaf of the call tree and let those changes be seen at a later leaf of the call tree. But everyone knows that global variables are poor style, so instead we'll use a trick to achieve the same effect as pass-by-reference: we'll pass in a list for each global variable, and then just change the elements of the list.
 
 Finally, our recursive function needs to be able to get the minimum conference number for a country in order to decide whether a permutation is lexicographically smaller than another one. When comparing two permutations, we don't need to compare all the conferences, just the first (minimum) for each country. This is because if two permutations have the same minimum conference for a given position, then they have the same country at that position, and all the conferences in that country will match. So, we need to be able to get from a list of countries to a list of their corresponding minimum conferences. To do this, we'll use a list comprehension and a dictionary mapping countries to their minimum conferences (we'll pass this dictionary into our recursive function).

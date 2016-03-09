@@ -17,5 +17,5 @@ def gen_permutations(current_list, current_position):
             swap(current_list, index, current_position)
 
 if __name__ == "__main__":
-    gen_permutations([1, 2, 3, 4, 5], 0)
-    assert num_permutations_seen == 120 # 120 == 5!
+    gen_permutations([1, 2, 3], 0)
+    assert num_permutations_seen == 6 # 120 == 5!
