@@ -154,11 +154,7 @@ Some readers will recognize this as the traveling salesman problem. The travelin
 
 ### Practice problems
 
-http://codeforces.com/problemset/problem/629/A  
-http://codeforces.com/problemset/problem/631/A  
-http://codeforces.com/problemset/problem/626/A  
-http://codeforces.com/problemset/problem/464/B  
-http://codeforces.com/problemset/problem/124/B
+
 
 ### Further reading
 
