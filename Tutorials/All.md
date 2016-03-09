@@ -38,17 +38,36 @@
     10. Lowest common ancestor
     11. Practice problems
 10. Segment trees
-    1. Range sum query
-    2. Range minimum query
+    1. Introduction
+    2. Range sum query
     3. Longest increasing subsequence
+    4. Lowest common ancestor
+    5. Practice problems
 11. Miscellaneous
     1. Sliding window range minimum query
     2. Largest rectangle under histogram
     3. Coordinate compression
     4. Sweep line
     5. Square root decomposition
-    6. 2-SAT
-12. Maximum flow
-13. Nim
-14. Fast Fourier transform
-15. Linear programming
+12. 2-SAT
+    1. 2-SAT
+    2. ?
+13. Maximum flow
+    1. Introduction
+    2. Pipe network
+    3. Maximum bipartite matching
+    4. Minimum cost maximum flow
+    5. Practice problems
+14. Nim
+    1. Nim
+    2. Nimbers (Grundy numbers)
+    3. Practice problems
+15. Fast Fourier transform
+    1. Introduction
+    2. Distinct sums
+    3. Hamming distance
+    4. Practice problems
+16. Meet in the Middle
+17. Linear programming
+    1. Introduction
+    2. Minimum cost maximum flow
