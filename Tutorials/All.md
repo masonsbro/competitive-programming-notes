@@ -67,7 +67,7 @@
     2. Distinct sums
     3. Hamming distance
     4. Practice problems
-16. Meet in the Middle
+16. Meet in the middle
 17. Linear programming
     1. Introduction
     2. Minimum cost maximum flow
