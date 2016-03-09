@@ -6,11 +6,13 @@
 4. Binary search
 5. Divide and conquer
 6. Math
-    1. Binary exponentiation
-    2. Euclidean algorithm
-    3. Extended Euclidean algorithm
-    4. Chinese remainder theorem
-    5. Matrix exponentiation
+    1. Introduction
+    2. Sieve of Eratosthenes
+    3. Binary exponentiation
+    4. Euclidean algorithm
+    5. Extended Euclidean algorithm
+    6. Chinese remainder theorem
+    7. Matrix exponentiation
 7. Greedy
 8. Dynamic programming
     1. Introduction
@@ -33,7 +35,8 @@
     7. Minimum spanning tree
     8. Strongly connected components
     9. Topological sort
-    10. Practice problems
+    10. Lowest common ancestor
+    11. Practice problems
 10. Segment trees
     1. Range sum query
     2. Range minimum query
@@ -44,6 +47,8 @@
     3. Coordinate compression
     4. Sweep line
     5. Square root decomposition
+    6. 2-SAT
 12. Maximum flow
-13. Fast Fourier transform
-14. Linear programming
+13. Nim
+14. Fast Fourier transform
+15. Linear programming
