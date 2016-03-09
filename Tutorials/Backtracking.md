@@ -164,5 +164,6 @@ http://codeforces.com/problemset/problem/124/B
 
 https://en.wikibooks.org/wiki/Algorithms/Backtracking
 https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking.html
+http://moritz.faui2k3.org/en/backtracking
 
 These resources discuss backtracking as a means of searching for a goal state. In this problem, we use the same technique, but we use it to explore *all* states and take the best leaf node found.
