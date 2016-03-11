@@ -12,10 +12,11 @@
     2. Sieve of Eratosthenes
     3. Binary exponentiation
     4. Matrix exponentiation
-    5. Euclidean algorithm
-    6. Extended Euclidean algorithm
-    7. Chinese remainder theorem
-    8. Catalan numbers
+    5. Recurrences
+    6. Euclidean algorithm
+    7. Extended Euclidean algorithm
+    8. Chinese remainder theorem
+    9. Catalan numbers
 9. Dynamic programming
     1. Introduction
     2. Fibonacci
@@ -38,8 +39,7 @@
     8. Strongly connected components
     9. Topological sort
     10. Lowest common ancestor
-    11. Heavy-light decomposition
-    12. Practice problems
+    11. Practice problems
 11. Segment trees
     1. Introduction
     2. Range sum query
@@ -52,16 +52,17 @@
     3. Coordinate compression
     4. Sweep line
     5. Square root decomposition
+    6. Meet in the middle
 13. Maximum flow
-    1. Introduction
-    2. Pipe network
-    3. Maximum bipartite matching
-    4. Minimum cost maximum flow
-    5. ?
-    6. Practice problems
+    1. Pipe network
+    2. Maximum bipartite matching
+    3. Minimum cost maximum flow
+    4. ?
+    5. Practice problems
 14. 2-SAT
-    1. Binary timetable problem
+    1. Binary timetable
     2. ?
+    3. Practice problems
 15. Nim
     1. Nim
     2. Nimbers (Grundy numbers)
@@ -71,8 +72,7 @@
     2. Distinct sums
     3. Hamming distance
     4. Practice problems
-17. Meet in the middle
-18. Linear programming
+17. Linear programming
     1. Introduction
     2. Minimum cost maximum flow
     3. ?

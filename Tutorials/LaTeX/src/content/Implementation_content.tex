@@ -1,0 +1,67 @@
+\section{Implementation}
+
+\subsection*{Motivating problem}
+
+\subsubsection*{Description}
+
+Liam was hired by Moogle to help build the Gaps app. Moogle Gaps is an application for finding the length of the shortest path between two locations, using different modes of transportation. Liam has been assigned the part of the application for hot air balloons. Because hot air balloons are not constrained by roads, the shortest distance between two points via hot air balloon is the Euclidian distance between those two points (as X and Y coordinates).
+
+Liam has spent his days watching TouYube videos, and the launch date for Gaps is fast approaching. He needs your help to implement the hot air balloon distance functionality. The app takes as input a list of $N$ locations and $Q$ queries. A location is given as a name (1-20 uppercase letters) and a pair of coordinates. A query asks for the shortest hot air balloon distance between two named locations.
+
+\subsubsection*{Constraints}
+
+\begin{gather*}
+1 \leq T \leq 5 \\
+1 \leq N \leq 1,000 \\
+1 \leq Q \leq 5,000 \\
+-10,000 \leq X_i \leq 10,000 \\
+-10,000 \leq Y_i \leq 10,000
+\end{gather*}
+
+\subsubsection*{Input}
+
+The first line contains $T$, the number of test cases. $T$ test cases follow.
+
+The first line of each test case contains $N$ and $Q$. The next $N$ lines contain descriptions of the locations in the app. The $i$th line contains the name for the $i$th location as well as $X_i$ and $Y_i$ (which are integers). The next $Q$ lines contain queries. The $j$th query contains two names of locations.
+
+\subsubsection*{Output}
+
+For each test case, output $Q$ lines. The $j$th line contains the hot air balloon distance between the two locations in the $j$th query. An answer is considered correct if its absolute or relative error is less than $10^{-6}$.
+
+\subsubsection*{Sample input}
+
+\begin{verbatim}
+1
+4 5
+VOUNTAINMIEW 45 100
+AOSLNGELES -1000 350
+YEWNORK 4000 5008
+AELTVIV 9999 -4046
+VOUNTAINMIEW AOSLNGELES
+YEWNORK AELTVIV
+VOUNTAINMIEW AELTVIV
+AOSLNGELES VOUNTAINMIEW
+AOSLNGELES YEWNORK
+\end{verbatim}
+
+\subsubsection*{Sample output}
+
+\begin{verbatim}
+1074.4882502847577
+10861.07347364891
+10782.923165821037
+1074.4882502847577
+6833.517688570068
+\end{verbatim}
+
+\subsection*{Discussion}
+
+An implementation problem is one in which the correct approach is fairly obvious, and the main difficulty is in implementing it. In many competitions, the first problem or two are implementation or brute force (covered in the next tutorial) problems.
+
+\subsection*{Practice problems}
+
+\begin{itemize}
+\item \url{http://codeforces.com/problemset/problem/614/A}
+\end{itemize}
+
+\subsection*{Further reading}
