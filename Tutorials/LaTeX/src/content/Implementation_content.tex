@@ -58,6 +58,35 @@ AOSLNGELES YEWNORK
 
 An implementation problem is one in which the correct approach is fairly obvious, and the main difficulty is in implementing it. In many competitions, the first problem or two are implementation or brute force (covered in the next tutorial) problems.
 
+For this problem, it is clear that we should read in the $N$ locations and store their coordinates in some kind of associative data structure (say, a hash table or binary search tree). Then we can perform lookups in our data structure for each of the two locations in a query and calculate the Euclidean distance between them.
+
+First, let's write a function to calculate the distance between two points. This is a direct translation of the formula $d = \sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}$.
+
+\begin{minted}{python}
+def distance(a, b):
+    return ((a[0] - b[0]) ** 2 + (a[1] - b[1]) ** 2) ** 0.5
+\end{minted}
+
+Now, let's read the input and store it in an associative data structure. I chose a hash table (Python's dictionary) because it is the fastest choice and it is very easy to use. In this problem, using a hash table leads to a solution that runs in $\mathcal{O}(N + Q)$ time, a balanced BST solution will run in $\mathcal{O}(N \log N + Q \log N)$, and a solution using a linked list, array, or unbalanced BST will run in $\mathcal{O}(NQ)$ time. Clearly, the hash table is the fastest, but for the small constraints of the problem all three will run in time.
+
+\begin{minted}{python}
+N, Q = map(int, raw_input().split())
+locations = {}
+for n in range(N):
+    L, X, Y = raw_input().split()
+    locations[L] = (int(X), int(Y))
+\end{minted}
+
+Now all we need to do is read the queries, process them, and print the output.
+
+\begin{minted}{python}
+for q in range(Q):
+    L1, L2 = raw_input().split()
+    print distance(locations[L1], locations[L2])
+\end{minted}
+
+And that's all there is to it! Implementation problems are tests of your basic programming ability. Sometimes they can be tricky and time-consuming, but they are usually not \textit{difficult}. The full code, along with some tests, can be found in the accompanying code directory.
+
 \subsection*{Practice problems}
 
 \begin{itemize}
@@ -65,3 +94,5 @@ An implementation problem is one in which the correct approach is fairly obvious
 \end{itemize}
 
 \subsection*{Further reading}
+
+There's not much to read about implementation problems. The best way to get better at them is to practice. I don't recommend taking much time to practice these outside of competitions, though---your time could better be spent practicing difficult problems. If you consistently run into trouble with implementation problems in competitions, start doing Div 2 A problems on Codeforces until you feel comfortable solving them in under 20 minutes.
