@@ -2,27 +2,123 @@
 
 \subsection{Introduction}
 
+Dynamic programming (DP) sounds scary if you've never heard of it, but it's a really simple concept. Essentially, some problems have a recursive formulation that breaks them down into similar but smaller subproblems.
+
+DP is probably the most important tool for solving competitive programming problems. At lower levels of competition, you will often find problems whose solutions require nothing more than to formulate a DP recurrence and base case; on the other hand, in harder problems DP is usually only one building block of many that compose the full solution.
+
+DP is best learned by example, so I hope to give enough examples here to elucidate the main ideas behind the technique. We will continue to encounter DP throughout the rest of these tutorials.
+
 \subsection{Fibonacci}
 
 \subsubsection*{Motivating problem}
 
 \subsubsubsection*{Description}
 
+Given a number $N$, compute the $N$th Fibonacci number. For the purposes of this problem, consider the $0$th Fibonacci number to be 0, the $1$st to be 1, and the $i$th ($i > 1$) to be the sum of the previous two (that is, the $(i-1)$th and the $(i-2)$th).
+
 \subsubsubsection*{Constraints}
+
+\begin{gather*}
+0 \leq N \leq 10^7
+\end{gather*}
 
 \subsubsubsection*{Input}
 
+The first and only line of input contains a single integer $N$.
+
 \subsubsubsection*{Output}
+
+The first and only line of output contains the $N$th Fibonacci number. Because this can be very large, output this number modulo 1000000007.
 
 \subsubsubsection*{Sample input}
 
+\begin{verbatim}
+15
+\end{verbatim}
+
 \subsubsubsection*{Sample output}
+
+\begin{verbatim}
+610
+\end{verbatim}
 
 \subsubsection*{Discussion}
 
-\subsubsection*{Practice problems}
+We've already learned the fastest way to solve this problem, and the DP approach is slower than that one; I include this problem because it is the "Hello World" of DP.
+
+In this problem, we're given the recurrence, so that makes it very easy. Let's write the obvious solution:
+
+\begin{minted}{python}
+def fib(n):
+    if n == 1: return 0
+    elif n == 2: return 1
+    else: (return fib(n - 1) + fib(n - 2)) \% 1000000007
+
+print fib(int(raw_input()))
+\end{minted}
+
+Done! Right?
+
+Well, not exactly. Let's analyze the running time. We have a recursion call tree with height $N$ and a branching factor of 2, so the time complexity is $O(2^N)$. That's fine for $N \leq 20$, but nowhere near good enough for $N \leq 10^7$.
+
+To get an idea of how to speed up our algorithm, let's think about the call tree. Here's a quick visualization for $N = 5$:
+
+\begin{verbatim}
+5
+ 4
+  3
+   2
+    1
+    0
+   1
+  2
+   1
+   0
+ 3
+  2
+   1
+   0
+  1
+\end{verbatim}
+
+Look how much work we're repeating! For example, \mintinline{python}{fib(2)} is calculated 3 times! It's always going to be the same answer, so why don't we just save that answer the first time? One concern might be that if we save every answer we get along the way we could run into memory issues. However, note that we will only save $O(N)$ numbers. This will fit in any reasonable memory limits.
+
+A Python dictionary seems like the easiest approach to use. Let's do it!
+
+\begin{minted}{python}
+memo = {0: 0, 1: 1}
+
+def fib(n):
+    if n not in memo:
+        memo[n] = (fib(n - 1) + fib(n - 2)) \% 1000000007
+    return memo[n]
+
+print fib(int(raw_input()))
+\end{minted}
+
+This idea of storing the result of each function call is called memoization. Memoization also makes our code a little cleaner: instead of hardcoding the base cases in our function, we can just include them in the dictionary when it's initialized.
+
+Memoization is also called top-down DP. Now our time complexity is $O(N)$, because we calculate $N - 1$ values one time each. Our space complexity is also $O(N)$. Unfortunately, if you submit this program, you'll get a runtime error verdict. That's because the recursion tree still has $O(N)$ height. This will result in a stack overflow.
+
+Instead, we'll have to use bottom-up DP. This is exactly the same technique, except we also must define an order in which we compute the answers to the subproblems, and then we'll compute them iteratively in that order. For this problem, it's easy to define the order to be the $0$th Fibonacci number, then the $1$st, then the $2$nd, et cetera, until we get the $N$th. We can store them in a dictionary like before, but I'll use a list this time for the sake of variety.
+
+\begin{minted}{python}
+N = int(raw_input())
+
+dp = [0, 1]
+for i in range(2, N + 1):
+    dp.append((dp[-1] + dp[-2]) \% 1000000007)
+
+print dp[N]
+\end{minted}
+
+We're finally done! This also has $O(N)$ time and $O(N)$ space, just like before. Astute readers may notice that we don't actually need to store all $N + 1$ entries in the list; we only need to keep track of the last two. This optimization can reduce our space complexity to $O(1)$. As the $O(N)$ version will pass for the constraints of this problem, I'll leave the $O(1)$ space version as an exercise for the reader.
 
 \subsubsection*{Further reading}
+
+\begin{itemize}
+\url{http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/}
+\end{itemize}
 
 \subsection{Coin change}
 
