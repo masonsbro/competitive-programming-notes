@@ -1,4 +1,8 @@
+// FFT implementation from Stanford ICPC notebook
+// https://web.stanford.edu/~liszt90/acm/notebook.html#file16
+
 #include <iostream>
+#include <cmath>
 
 using namespace std;
 
