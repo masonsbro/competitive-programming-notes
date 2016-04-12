@@ -52,7 +52,7 @@ In this problem, we're given the recurrence, so that makes it very easy. Let's w
 def fib(n):
     if n == 1: return 0
     elif n == 2: return 1
-    else: (return fib(n - 1) + fib(n - 2)) \% 1000000007
+    else: (return fib(n - 1) + fib(n - 2)) % 1000000007
 
 print fib(int(raw_input()))
 \end{minted}
@@ -90,7 +90,7 @@ memo = {0: 0, 1: 1}
 
 def fib(n):
     if n not in memo:
-        memo[n] = (fib(n - 1) + fib(n - 2)) \% 1000000007
+        memo[n] = (fib(n - 1) + fib(n - 2)) % 1000000007
     return memo[n]
 
 print fib(int(raw_input()))
@@ -107,17 +107,19 @@ N = int(raw_input())
 
 dp = [0, 1]
 for i in range(2, N + 1):
-    dp.append((dp[-1] + dp[-2]) \% 1000000007)
+    dp.append((dp[-1] + dp[-2]) % 1000000007)
 
 print dp[N]
 \end{minted}
 
 We're finally done! This also has $O(N)$ time and $O(N)$ space, just like before. Astute readers may notice that we don't actually need to store all $N + 1$ entries in the list; we only need to keep track of the last two. This optimization can reduce our space complexity to $O(1)$. As the $O(N)$ version will pass for the constraints of this problem, I'll leave the $O(1)$ space version as an exercise for the reader.
 
+Also, I should reiterate that the fastest way to solve this problem is the matrix exponentiation method mentioned in the math tutorial.
+
 \subsubsection*{Further reading}
 
 \begin{itemize}
-\url{http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/}
+\item \url{http://www.geeksforgeeks.org/program-for-nth-fibonacci-number/}
 \end{itemize}
 
 \subsection{Coin change}
