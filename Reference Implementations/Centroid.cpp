@@ -75,7 +75,7 @@ void centroid(int start, int prev, int size, int level) {
     }
 }
 
-int init_centroid(int root) {
+void init_centroid(int root) {
     setup_centroid(root);
     centroid(root, -1, N, 0);
 }
